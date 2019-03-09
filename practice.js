@@ -9,7 +9,7 @@
 ////////// PROBLEM 1 //////////
 
 // Do not edit the code below.
-var arr = [10,20,30];
+var arr = [10, 20, 30];
 // Do not edit the code above.
 
 /*
@@ -17,15 +17,15 @@ var arr = [10,20,30];
   Return the first item in the given array.
 */
 
-function first(arr){
-  return arr[0]; 
+function first(arr) {
+  return arr[0];
 }
 
 
 ////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
-var arr = [40,50,60];
+var arr = [40, 50, 60];
 // Do not edit the code above.
 
 /*
@@ -34,7 +34,7 @@ var arr = [40,50,60];
 */
 
 const last = (arr) => {
-  return arr.pop(); 
+  return arr.pop();
 }
 
 
@@ -51,7 +51,7 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 
 const looper = (family) => {
   for (var i = 0; i < family.length; i++) {
-    alert(family[i]); 
+    alert(family[i]);
   }
 }
 
@@ -67,9 +67,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop through the given array backwards alerting every item in the array starting at the end.\
 */
 
-function reversedLooper(letters){
-  for (var i = letters.length - 1; i >= 0 ; i--){
-    alert(letters[i]);  
+function reversedLooper(letters) {
+  for (var i = letters.length - 1; i >= 0; i--) {
+    alert(letters[i]);
   }
 }
 
@@ -77,7 +77,7 @@ function reversedLooper(letters){
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
-var nums = [1,2,3,6,22,98,45,23,22,12];
+var nums = [1, 2, 3, 6, 22, 98, 45, 23, 22, 12];
 // Do not edit the code above.
 
 /*
@@ -87,14 +87,14 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 
 const evenFinder = (nums) => {
-  for (var i = 0; i <= nums.length; i++){
-var newArray = []; 
-if (nums[i] % 2 === 0) {
-  newArray.push(nums[i]); 
+  var newArray = [];
+  for (var i = 0; i <= nums.length; i++) {
+    if (nums[i] % 2 === 0) {
+      newArray.push(nums[i]);
     }
   }
+  return newArray;
 }
-newArray; 
 
 
 //MY notes: for loop - the loop can start at the beg/ loop through the whole thing - <=    / go to the next one each time
@@ -116,7 +116,7 @@ newArray;
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+var numbersArray = [1, 2, 34, 54, 55, 34, 32, 11, 19, 17, 54, 66, 13];
 // Do not edit the code above.
 
 /*
@@ -131,7 +131,7 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 ////////// PROBLEM 7 //////////
 
 // Do not edit the code below.
-var getRandomArbitrary = function() {
+var getRandomArbitrary = function () {
   return Math.floor(Math.random() * 30);
 };
 // Do not edit the code above.
@@ -199,7 +199,7 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   Return a new array after adding ten to each item in numbers. 
   *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 */
-  
+
 //Code Here
 
 
@@ -211,10 +211,10 @@ var num1 = Math.floor(Math.random() * 30);
 var num2 = Math.floor(Math.random() * 30);
 var arr1 = [];
 var arr2 = [];
-for(var i = 0; i < num1; i++){
+for (var i = 0; i < num1; i++) {
   arr1.push(i);
 }
-for(var i = 0; i < num2; i++){
+for (var i = 0; i < num2; i++) {
   arr2.push(i);
 }
 // Do not edit the code above.
@@ -247,27 +247,27 @@ for(var i = 0; i < num2; i++){
 var devMountainEmployees = [];
 
 var tyler = {
-    name: 'Tyler',
-    position: 'Lead Instructor/Engineer',
-    spiritAnimal: 'Honey Badger'
+  name: 'Tyler',
+  position: 'Lead Instructor/Engineer',
+  spiritAnimal: 'Honey Badger'
 };
 
 var cahlan = {
-    name: 'Cahlan',
-    position: 'CEO',
-    spiritAnimal: 'butterfly'
+  name: 'Cahlan',
+  position: 'CEO',
+  spiritAnimal: 'butterfly'
 };
 
 var ryan = {
-    name: 'Ryan',
-    position: 'Marketing',
-    spiritAnimal: 'fox'
+  name: 'Ryan',
+  position: 'Marketing',
+  spiritAnimal: 'fox'
 };
 
 var colt = {
-    name: 'Colt',
-    position: 'Everything really',
-    spiritAnimal: 'Young Male Horse'
+  name: 'Colt',
+  position: 'Everything really',
+  spiritAnimal: 'Young Male Horse'
 };
 // Do not edit the code above.
 
@@ -310,10 +310,10 @@ var colt = {
 
 // Do not edit the code below.
 var user1 = {
-    name: 'Tyler McGinnis',
-    email: 'tylermcginnis33@gmail.com',
-    password: 'iLoveJavaScript',
-    username: 'infiniteLoop'
+  name: 'Tyler McGinnis',
+  email: 'tylermcginnis33@gmail.com',
+  password: 'iLoveJavaScript',
+  username: 'infiniteLoop'
 };
 // Do not edit the code above.
 
@@ -322,7 +322,7 @@ var user1 = {
 
 
 /*
-  Now you have a very common data structure. 
+  Now you have a very common data structure.
   Twitter is a good use case.
   It's easy to imagine that your followers list on Twitter is an Array full of objects and those objects contain properties about the specific person you follow.
 
