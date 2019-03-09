@@ -17,8 +17,9 @@ var arr = [10,20,30];
   Return the first item in the given array.
 */
 
-//Code Here
-
+function first(arr){
+  return arr[0]; 
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -32,8 +33,9 @@ var arr = [40,50,60];
   Return the last item in the given array.
 */
 
-//Code Here
-
+const last = (arr) => {
+  return arr.pop(); 
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -47,8 +49,11 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
   Loop through the given array and alert every item in the array.
 */
 
-//Code Here
-
+const looper = (family) => {
+  for (var i = 0; i < family.length; i++) {
+    alert(family[i]); 
+  }
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -62,8 +67,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop through the given array backwards alerting every item in the array starting at the end.\
 */
 
-//Code Here
-
+function reversedLooper(letters){
+  for (var i = letters.length - 1; i >= 0 ; i--){
+    alert(letters[i]);  
+  }
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -77,10 +85,21 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Return an array that contains the even numbers from the nums array.
 */
 
-//Code Here
+
+const evenFinder = (nums) => {
+  for (var i = 0; i <= nums.length; i++){
+var newArray = []; 
+if (nums[i] % 2 === 0) {
+  newArray.push(nums[i]); 
+    }
+  }
+}
+newArray; 
 
 
-
+//MY notes: for loop - the loop can start at the beg/ loop through the whole thing - <=    / go to the next one each time
+//if - if the number is even we want to see it in the new array 
+// return a newArray 
 
 
 
